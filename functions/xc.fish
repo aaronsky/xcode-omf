@@ -11,11 +11,11 @@ function xc -d "Opens the first xcworkspace/xcodeproj in the specified directory
 
     if count $xcode_proj > /dev/null
         echo "Found $xcode_proj[1]"
-        open $xcode_proj[1]
+        xed $xcode_proj[1]
         return 0
     else if count $swift_package > /dev/null
         echo "Found $swift_package[1]"
-        open $swift_package[1]
+        xed $swift_package[1]
         return 0
     end
     
